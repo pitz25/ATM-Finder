@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "857203418610",
+    "firebase_url": "https://atm-finder-5e263-default-rtdb.firebaseio.com",
+    "project_id": "atm-finder-5e263",
+    "storage_bucket": "atm-finder-5e263.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857203418610:android:061eb1ba97f91cac9a376b",
+        "android_client_info": {
+          "package_name": "com.example.atm_finder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9w9-2ZWtboV4T7g4iKnUfBG4j6CiRmbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

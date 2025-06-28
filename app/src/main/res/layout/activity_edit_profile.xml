@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  Background image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profilebg"
+        android:contentDescription="Background" />
+
+    <!--  Semi-transparent overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B7FFFFFF" />
+
+    <!--  Top bar: Logout (left) & Delete Account (right) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Logout Button (Top Right) -->
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#EF4444"
+            android:text="Log Out"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Delete Account Button (Top Left) -->
+        <Button
+            android:id="@+id/buttonDeleteAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="#EF4444"
+            android:text="Delete Account"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--  Main content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:layout_marginTop="90dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!--  App Title -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/alata"
+                android:text="ATM-Finder"
+                android:textColor="#1E3A8A"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <!-- App Logo -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/atmlogo"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="App Logo" />
+
+            <!-- Full Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Full Name:"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/editTextBackground"
+                android:fontFamily="@font/alata"
+                android:hint="Enter your full name"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <!-- Bio -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bio:"
+                android:fontFamily="@font/alata"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/editTextBackground"
+                android:fontFamily="@font/alata"
+                android:hint="Tell us about yourself"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Number:"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/editTextBackground"
+                android:fontFamily="@font/alata"
+                android:hint="Enter your phone number"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <!-- Username -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:fontFamily="@font/alata"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="?android:attr/editTextBackground"
+                android:fontFamily="@font/alata"
+                android:hint="Enter your username"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/buttonUpdateProfile"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#1E3A8A"
+                android:text="Update Profile"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

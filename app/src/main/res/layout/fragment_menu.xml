@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDAEB"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/alata"
+        android:text="ATM-Finder"
+        android:textColor="#1E3A8A"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="151dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/atmlogo" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fredoka_light"
+        android:text="Welcome, user✨"
+        android:textColor="#1E3A8A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="#CCCCCC" />
+
+    <!-- My Profile Option -->
+    <TextView
+        android:id="@+id/optionMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:paddingVertical="12dp"
+        android:text="My Profile"
+        android:textColor="#1E3A8A"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <!-- About Us Option -->
+    <TextView
+        android:id="@+id/optionAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:paddingVertical="12dp"
+        android:text="About Us"
+        android:textColor="#1E3A8A"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <!-- FAQ Option -->
+    <TextView
+        android:id="@+id/optionFaq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:paddingVertical="12dp"
+        android:text="FAQ"
+        android:textColor="#1E3A8A"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <!-- Logout Option -->
+    <TextView
+        android:id="@+id/optionLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:paddingVertical="12dp"
+        android:text="Log Out"
+        android:textColor="#EF4444"
+        android:textSize="18sp" />
+
+</LinearLayout>

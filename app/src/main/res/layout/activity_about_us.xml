@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/edit_bg"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background" />
+
+    <!-- Optional overlay for readability -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3FFFFFF" /> <!-- 70% white -->
+
+    <!-- Main Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- App Title -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/alata"
+                android:text="ATM-Finder"
+                android:textColor="#1E3A8A"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <!-- App Logo -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/atmlogo"
+                android:contentDescription="App Logo"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Rounded Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_box"
+                android:elevation="6dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- App Name -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/alata"
+                    android:text="📱 Application Name: ATM-Finder"
+                    android:textColor="#1E3A8A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Developer Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Developers:"
+                    android:textColor="#1E3A8A"
+                    android:textStyle="bold" />
+
+                <!-- Toggle -->
+                <TextView
+                    android:id="@+id/dropdownToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/alata"
+                    android:text="🔽 Show List of Developers"
+                    android:textColor="#1E40AF"
+                    android:textStyle="bold" />
+
+                <!-- Developer List -->
+                <TextView
+                    android:id="@+id/developerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Amirul Hafeez Bin Yusnazery\n• Ain Natasha Binti Amran\n• Faizmin Emira Binti Mohd Faizul\n• Rabiatuladawiyah Binti Mohammad Murtadza"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <!-- Group -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/alata"
+                    android:text="\n👥 Group: CDCS240 5A"
+                    android:textColor="#1E3A8A" />
+
+                <!-- Course -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/alata"
+                    android:text="📚 Course: ICT602 - Mobile Technology and Development"
+                    android:textColor="#1E3A8A" />
+
+                <!-- Github -->
+                <TextView
+                    android:id="@+id/githubLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/alata"
+                    android:text="\n🔗 Github Repository: [link here]"
+                    android:textColor="#1E40AF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

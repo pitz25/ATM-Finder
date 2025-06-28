@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginbg_img"
+        android:contentDescription="Background Image" />
+
+    <!--  Foreground ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="32dp"
+            android:background="#CCFFFFFF">
+
+            <!--  App Title -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/alata"
+                android:text="ATM-Finder"
+                android:textColor="#1E3A8A"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <!--  App Logo -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/atmlogo"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="App Logo" />
+
+            <!-- Spacer -->
+            <View android:layout_width="match_parent" android:layout_height="30dp" />
+
+            <!--  Username Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/alata"
+                android:text="Enter Your Username : "
+                android:textColor="#111827"
+                android:textStyle="bold" />
+
+            <!-- ✏ Username Input (Underlined) -->
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alata"
+                android:background="?android:attr/editTextBackground"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <!-- Spacer -->
+            <View android:layout_width="match_parent" android:layout_height="30dp" />
+
+            <!--  Password Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/alata"
+                android:text="Enter Your Password : "
+                android:textColor="#111827"
+                android:textStyle="bold" />
+
+            <!--  Password Input (Underlined) -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/alata"
+                android:background="?android:attr/editTextBackground"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#1E3A8A"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- ⏳ ProgressBar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <!-- 🔗 Forgot + Register -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Your Password ? "
+                    android:textColor="#1E40AF"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredoka_light"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textColor="#888888"
+                    android:paddingHorizontal="4dp" />
+
+                <TextView
+                    android:id="@+id/textViewCreateAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create a New Account"
+                    android:textColor="#1E40AF"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredoka_light"
+                    android:paddingStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

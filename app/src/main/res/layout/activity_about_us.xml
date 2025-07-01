@@ -15,7 +15,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#B3FFFFFF" /> <!-- 70% white -->
+        android:background="#B3FFFFFF" />
 
     <!-- Main Scrollable Content -->
     <ScrollView
@@ -119,17 +119,16 @@
                     android:text="📚 Course: ICT602 - Mobile Technology and Development"
                     android:textColor="#1E3A8A" />
 
-                <!-- Github -->
+                <!-- GitHub Link -->
                 <TextView
                     android:id="@+id/githubLink"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/alata"
-                    android:text="\n🔗 Github Repository:[https://github.com/pitz25/ATM-Finder]"
+                    android:text="🔗 Github Repository (Click Here) "
                     android:textColor="#1E40AF"
                     android:textStyle="bold" />
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
